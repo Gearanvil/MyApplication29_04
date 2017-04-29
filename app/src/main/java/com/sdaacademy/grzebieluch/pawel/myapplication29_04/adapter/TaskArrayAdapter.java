@@ -33,7 +33,7 @@ public class TaskArrayAdapter extends ArrayAdapter<Task> {
         TextView rowText = (TextView) convertView.findViewById(R.id.single_row_item_text);
         CheckBox checkerBox = (CheckBox) convertView.findViewById(R.id.single_row_item_check_box);
 
-        rowNumber.setText(position+".");
+        rowNumber.setText(position+1+".");
         rowText.setText(task.getValue());
         if(task.isCompleted()) checkerBox.isChecked();
 

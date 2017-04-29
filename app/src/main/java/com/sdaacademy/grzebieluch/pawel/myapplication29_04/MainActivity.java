@@ -15,6 +15,7 @@ import com.sdaacademy.grzebieluch.pawel.myapplication29_04.model.Task;
 
 import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.json.GsonHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.BufferedInputStream;
@@ -68,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
             RestTemplate restTemplate = new RestTemplate();
 
 // Add the String message converter
-            restTemplate.getMessageConverters().add(new StringHttpMessageConverter());
+            restTemplate.getMessageConverters().add(new GsonHttpMessageConverter());
 
 // Make the HTTP GET request, marshaling the response to a String
-            task= restTemplate.getForObject(url, Task[].class, "Android");
+            task= restTemplate.getForObject(url, Task[].class);
 
 
             return task;

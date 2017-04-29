@@ -20,9 +20,10 @@ public class TaskMapper {
     public static List<Task> taskList(Task[] task){
         List<Task> mapperList = new ArrayList<>();
 
+        for ( : tasks ) {
+            task =new Task;
 
-//        String base = currencyExchangeRates.getBase();
-//
+        }
 //        Map<String,String> rates = currencyExchangeRates.getRates();
 //        Set<String> keys = rates.keySet();
 //        Currency currency;
