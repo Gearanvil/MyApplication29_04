@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</TextView>
+
+    <TextView
+        android:text=" 1. "
+        android:background="@drawable/back"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/single_row_id"
+        android:gravity="center"
+
+        android:layout_alignBottom="@+id/textView2" />
+
+
+    <TextView
+        android:text="kjkllkjkjjjllkkkkkkkkkkkkkkkkkkkkkkkkkkjjl"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+android:layout_toLeftOf="@id/checkBox"
+        android:layout_toRightOf="@id/single_row_id"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/checkBox"
+        />
+    <CheckBox
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/back"/>
+</RelativeLayout>
